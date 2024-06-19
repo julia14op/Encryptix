@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar with Toggle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+            color: white;
+        }
+        .navbar img {
+            height: 33.82px;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .navbar li {
+            margin: 0 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        .navbar .btn {
+            padding: 10px 20px;
+            margin-left: 10px;
+            color: white;
+            background-color: #555;
+            border: none;
+            cursor: pointer;
+        }
+        .navbar .btn-signup {
+            background-color: #777;
+        }
+        .navbar .toggle-button {
+            display: none;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 15px;
+            font-size: 24px;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="Kestrel logo.png" alt="logo" width="215.79px" height="33.82px">
+            <ul id="navbar-menu">
+                <li><a href="#"> About Us </a></li>
+                <li><a href="#"> Services </a></li>
+                <li><a href="#"> Pricing </a></li>
+                <li><a href="#"> Contact Us </a></li>
+            </ul>
+            <button class="btn"> Login </button>
+            <button class="btn btn-signup"> SignUp </button>
+        </nav>
+    </header>
+
+    <script>
+        function redirectToNewPage() {
+            window.location.href = 'newpage.html';
+        }
+    </script>
+</body>
+</html>
